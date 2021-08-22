@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] Rigidbody2D playerRigidBody;
     [SerializeField] Animator playerAnimator;
 
+    public string transitionName;
+
     void Start()
     {
         if(instance != null && instance != this)

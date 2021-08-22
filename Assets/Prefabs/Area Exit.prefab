@@ -71,3 +71,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Field
+  transitionAreaName: 
+  theAreaEnter: {fileID: 0}

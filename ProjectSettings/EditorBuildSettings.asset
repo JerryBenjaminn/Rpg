@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home/Home.unity
     guid: 07b86b9be0ffb5e40807ddf225794e34
+  - enabled: 1
+    path: Assets/Scenes/Crossroads/Crossroads.unity
+    guid: 8341ac2f7ff9f9f458a36116a78acd88
+  - enabled: 1
+    path: Assets/Scenes/Graveyard/Graveyard.unity
+    guid: 0601e1e2b88deeb42b6004f5b652bee5
+  - enabled: 1
+    path: Assets/Scenes/First town/First town.unity
+    guid: 4202b9d24e4afbd46aad378d648f707a
+  - enabled: 1
+    path: Assets/Scenes/TownOutskirts/TownOutskirts.unity
+    guid: 4777d03d107dfa8439e31dea384f8576
   m_configObjects: {}
