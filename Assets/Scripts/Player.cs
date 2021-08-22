@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
+
     [SerializeField] int moveSpeed = 1;
     [SerializeField] Rigidbody2D playerRigidBody;
     [SerializeField] Animator playerAnimator;
 
     void Start()
     {
+        if(instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
         
+
+        DontDestroyOnLoad(gameObject);
     }
 
     
