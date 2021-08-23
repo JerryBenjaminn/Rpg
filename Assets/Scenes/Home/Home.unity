@@ -149,7 +149,7 @@ MonoBehaviour:
   - I'm the Boss!
   - I'm the most boss u will ever see!
   - Fuck you!
-  currentSentence: 3
+  currentSentence: 0
 --- !u!224 &141992543 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8494993307793876641, guid: 99512d89bc9030841b6607716eac1897, type: 3}
