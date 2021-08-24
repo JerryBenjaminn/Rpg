@@ -42,7 +42,8 @@ public class DialogController : MonoBehaviour
                     }
                     else
                     {
-                    dialogText.text = dialogSentences[currentSentence];
+                        CheckForName();
+                        dialogText.text = dialogSentences[currentSentence];
                     }
                 }
                 else
@@ -58,11 +59,21 @@ public class DialogController : MonoBehaviour
         dialogSentences = newSentencesToUse;
         currentSentence = 0;
 
+        CheckForName(); //Tarkistetaan nimi keskustelun alussa
         dialogText.text = dialogSentences[currentSentence];
         dialogBox.SetActive(true);
 
         dialogJustStarted = true;
         Player.instance.deactivateMovement = true;
+    }
+
+    void CheckForName()
+    {
+        if (dialogSentences[currentSentence].StartsWith("#")) //Tarkistetaan, että alkaako lause "#":llä. Jos alkaa, niin vaihdetaan nimiteksti tyhjäksi.
+        {
+            nameText.text = dialogSentences[currentSentence].Replace("#", "");
+            currentSentence++;
+        }
     }
 
     public bool isDialogBoxActive()

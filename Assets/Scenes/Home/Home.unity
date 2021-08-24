@@ -22073,28 +22073,52 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
       propertyPath: sentences.Array.data[0]
+      value: '#Father'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[1]
       value: Boy, it's time to start your training if you are to become a part of
         the royal guard as your old man used to be.
       objectReference: {fileID: 0}
     - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
-      propertyPath: sentences.Array.data[1]
-      value: Nice! Give me a sword and let's get started!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
       propertyPath: sentences.Array.data[2]
-      value: Ha! You foolish boy. You are not ready to wield a sword!
+      value: '#Boy'
       objectReference: {fileID: 0}
     - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
       propertyPath: sentences.Array.data[3]
-      value: Take this stick and go take care of the pest problem at the farm.
+      value: Nice! Give me a sword and let's get started!
       objectReference: {fileID: 0}
     - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
       propertyPath: sentences.Array.data[4]
-      value: But father...
+      value: '#Father'
       objectReference: {fileID: 0}
     - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
       propertyPath: sentences.Array.data[5]
+      value: Ha! You foolish boy. You are not ready to wield a sword!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[6]
+      value: Take this stick and go take care of the pest problem at the farm.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[7]
+      value: '#Boy'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[8]
+      value: But father...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[9]
+      value: '#Father'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[10]
       value: SILENCE BOY!! You will do as I say. Now go and take care of the pests.
       objectReference: {fileID: 0}
     - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
