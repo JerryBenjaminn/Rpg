@@ -14,6 +14,8 @@ public class DialogController : MonoBehaviour
 
     public static DialogController instance;
 
+    private bool dialogJustStarted;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,18 +30,42 @@ public class DialogController : MonoBehaviour
         {
             if (Input.GetButtonUp("Fire1"))
             {
-                currentSentence++;
-
-                if(currentSentence >= dialogSentences.Length)
+                if (!dialogJustStarted)
                 {
-                    dialogBox.SetActive(false);
+                    
+                    currentSentence++;
+
+                     if(currentSentence >= dialogSentences.Length)
+                    {
+                        dialogBox.SetActive(false);
+                    }
+                    else
+                    {
+                    dialogText.text = dialogSentences[currentSentence];
+                    }
                 }
                 else
                 {
-                    dialogText.text = dialogSentences[currentSentence];
+                    dialogJustStarted = false;
                 }
-
             }
         }
     }
+
+    public void ActivateDialog(string[] newSentencesToUse)
+    {
+        dialogSentences = newSentencesToUse;
+        currentSentence = 0;
+
+        dialogText.text = dialogSentences[currentSentence];
+        dialogBox.SetActive(true);
+
+        dialogJustStarted = true;
+    }
+
+    public bool isDialogBoxActive()
+    {
+        return dialogBox.activeInHierarchy;
+    }
+
 }

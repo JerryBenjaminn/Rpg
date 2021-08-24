@@ -146,9 +146,9 @@ MonoBehaviour:
   nameBox: {fileID: 362292421}
   dialogSentences:
   - Hello!
-  - I'm the Boss!
-  - I'm the most boss u will ever see!
-  - Fuck you!
+  - I'd like to buy stuff!
+  - 
+  - 
   currentSentence: 0
 --- !u!224 &141992543 stripped
 RectTransform:
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa9019b58ca57b4fb90bd013a55d8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 30
   playerRigidBody: {fileID: 153616282}
   playerAnimator: {fileID: 153616286}
   transitionName: 
@@ -302,7 +302,7 @@ Transform:
   m_LocalScale: {x: 1.0125, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &153616286
 Animator:
@@ -12266,7 +12266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &742670684
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12390,7 +12390,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195037370
 GameObject:
@@ -22064,6 +22064,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1804927764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.710806
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.2913456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305112, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: m_Name
+      value: Undead Quest NPC
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
 --- !u!1 &2065722381
 GameObject:
   m_ObjectHideFlags: 0
@@ -22153,7 +22210,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &185846849132624341
 PrefabInstance:

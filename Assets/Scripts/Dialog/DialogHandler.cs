@@ -16,9 +16,9 @@ public class DialogHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canActivateBox && Input.GetButtonDown("Fire1"))
+        if(canActivateBox && Input.GetButtonDown("Fire1") && !DialogController.instance.isDialogBoxActive())
         {
-            Debug.Log("Hey we can activate the dialogbox!");
+            DialogController.instance.ActivateDialog(sentences);
         }
     }
 
