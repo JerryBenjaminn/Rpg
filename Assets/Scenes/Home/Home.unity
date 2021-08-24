@@ -235,10 +235,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa9019b58ca57b4fb90bd013a55d8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
+  moveSpeed: 7
   playerRigidBody: {fileID: 153616282}
   playerAnimator: {fileID: 153616286}
   transitionName: 
+  deactivateMovement: 0
 --- !u!212 &153616284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -302,7 +303,7 @@ Transform:
   m_LocalScale: {x: 1.0125, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &153616286
 Animator:
@@ -22071,6 +22072,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: Boy, it's time to start your training if you are to become a part of
+        the royal guard as your old man used to be.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: Nice! Give me a sword and let's get started!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: Ha! You foolish boy. You are not ready to wield a sword!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: Take this stick and go take care of the pest problem at the farm.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: But father...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289374921243305109, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: SILENCE BOY!! You will do as I say. Now go and take care of the pests.
+      objectReference: {fileID: 0}
     - target: {fileID: 1289374921243305110, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -22117,7 +22143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1289374921243305112, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
       propertyPath: m_Name
-      value: Undead Quest NPC
+      value: The Father NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3195eaa9b29d20346857f23ddf097ece, type: 3}
@@ -22210,7 +22236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &185846849132624341
 PrefabInstance:
@@ -22318,7 +22344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5748600627818239013, guid: a2139b99014909748a017f1ddf8cbd28, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5748600627818239013, guid: a2139b99014909748a017f1ddf8cbd28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22391,7 +22417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6187418136514609479, guid: 045eb7644771a1148a8ef9c6e09c2572, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6187418136514609479, guid: 045eb7644771a1148a8ef9c6e09c2572, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22509,7 +22535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6793754141350195190, guid: 43986432a959b1141a4bc83af7fc63ba, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6793754141350195190, guid: 43986432a959b1141a4bc83af7fc63ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22578,7 +22604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494993307793876641, guid: 99512d89bc9030841b6607716eac1897, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8494993307793876641, guid: 99512d89bc9030841b6607716eac1897, type: 3}
       propertyPath: m_AnchorMax.x

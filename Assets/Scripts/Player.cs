@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     private Vector3 bottomLeftEdge;
     private Vector3 topRightEdge;
 
+    public bool deactivateMovement = false;
+
     void Start()
     {
         if(instance != null && instance != this)
@@ -34,22 +36,36 @@ public class Player : MonoBehaviour
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
 
-        playerRigidBody.velocity = new Vector2(horizontalMovement, verticalMovement) * moveSpeed;
-
+        if (deactivateMovement)
+        {
+            playerRigidBody.velocity = Vector2.zero;
+        }
+        else
+        {
+            playerRigidBody.velocity = new Vector2(horizontalMovement, verticalMovement) * moveSpeed;
+        }
+        
         playerAnimator.SetFloat("movementX", playerRigidBody.velocity.x);
         playerAnimator.SetFloat("movementY", playerRigidBody.velocity.y);
 
         if(horizontalMovement == 1 || horizontalMovement == -1 || verticalMovement == 1 || verticalMovement == -1)
         {
-            playerAnimator.SetFloat("lastX", horizontalMovement);
-            playerAnimator.SetFloat("lastY", verticalMovement);
+            if (!deactivateMovement)
+            {
+                playerAnimator.SetFloat("lastX", horizontalMovement);
+                playerAnimator.SetFloat("lastY", verticalMovement);
+            }
+            
         }
 
         transform.position = new Vector3(
             Mathf.Clamp(transform.position.x, bottomLeftEdge.x, topRightEdge.x),
             Mathf.Clamp(transform.position.y, bottomLeftEdge.y, topRightEdge.y),
             Mathf.Clamp(transform.position.z, bottomLeftEdge.z, topRightEdge.z)
-            );      
+            );
+        
+        
+
     }
 
     public void SetLimit(Vector3 bottomEdgeToSet, Vector3 topEdgeToSet)
