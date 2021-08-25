@@ -38,7 +38,7 @@ public class PlayerStats : MonoBehaviour
 
         for (int i = 2; i < xpForNextLevel.Length; i++)
         {
-            xpForNextLevel[i] = (int)(0.02f * i * i * i + 3.06f* i * i * i + 105.6f * i); // muutetaan float -> int
+            xpForNextLevel[i] = (int)(0.02f * i * i * i + 3.06f* i * i * i + 105.6f * i); // muutetaan float -> int. Xp:n m‰‰r‰ on kaava Dark souls pelist‰
         }
     }
 
@@ -61,7 +61,7 @@ public class PlayerStats : MonoBehaviour
 
             if(playerLevel % 2 == 0)
             {
-                dexterity++;
+                dexterity++; 
             }
             else
             {
@@ -70,7 +70,7 @@ public class PlayerStats : MonoBehaviour
             if (playerLevel % 1 == 0)
             {
                 maxHP = maxHP + 10;
-                maxMana = maxMana + 10;
+                maxMana = maxMana + 10; // Jokaisella levelill‰ lis‰t‰‰n 10 hp:ta ja 10 manaa
             }
 
         }
